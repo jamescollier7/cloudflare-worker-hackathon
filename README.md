@@ -1,4 +1,4 @@
-# cloudflare-worker-hackathon
+# Cloudflare Worker Hackathon
 
 This is a quick example of serving html files as pages from GitHub via Cloudflare Workers
 
