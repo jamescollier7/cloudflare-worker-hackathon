@@ -7,3 +7,7 @@ This is a quick example of serving html files as pages from GitHub via Cloudflar
 
 ## Live Page:
 [https://my-worker.jamescollier7.workers.dev/](https://my-worker.jamescollier7.workers.dev/)
+
+## Results:
+PageSpeed Insights shows 100 in every category
+![page speed logo](https://github.com/jamescollier7/cloudflare-worker-hackathon/speed-score.png)
