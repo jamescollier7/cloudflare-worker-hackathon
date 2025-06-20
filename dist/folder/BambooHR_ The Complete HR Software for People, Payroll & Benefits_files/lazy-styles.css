@@ -1,0 +1,240 @@
+/* below the fold CSS goes here */
+
+/* fonts */
+
+/* icons */
+
+/* arrows */
+.icon.icon-sync-direction-both,
+.icon.icon-sync-direction-left,
+.icon.icon-sync-direction-right {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 24px;
+}
+
+.icon.icon-sync-direction-both::after,
+.icon.icon-sync-direction-left::after,
+.icon.icon-sync-direction-right::after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  left: 0;
+}
+
+.icon.icon-sync-direction-both::before,
+.icon.icon-sync-direction-left::before,
+.icon.icon-sync-direction-right::before {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  right: 0;
+}
+
+.icon.icon-sync-direction-both::after,
+.icon.icon-sync-direction-both::before,
+.icon.icon-sync-direction-left::after,
+.icon.icon-sync-direction-left::before,
+.icon.icon-sync-direction-right::after,
+.icon.icon-sync-direction-right::before {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 4px;
+  width: 12px;
+  height: 16px;
+  transform: rotate(90deg);
+  content: '';
+}
+
+.icon.icon-sync-direction-right::after,
+.icon.icon-sync-direction-left::before {
+  display: none;
+}
+
+/* both arrow */
+.icon.icon-sync-direction-both {
+  background: linear-gradient(
+    to left,
+    #FFD119 16px, transparent 0)
+    no-repeat 0 9px/32px 6px;
+}
+
+.icon.icon-sync-direction-both::after {
+  border-top: 12px solid #FFD119;
+}
+
+.icon.icon-sync-direction-both::before {
+  border-bottom: 12px solid #FFD119;
+}
+
+/* right arrow */
+.icon.icon-sync-direction-right {
+  background: linear-gradient(
+    to left,
+    var(--color-1) 16px, transparent 0)
+    no-repeat 0 9px/32px 6px;
+    margin-left: -12px;
+}
+
+.icon.icon-sync-direction-right::before {
+  border-bottom: 12px solid var(--color-1);
+}
+
+/* left arrow */
+.icon.icon-sync-direction-left {
+  background: linear-gradient(
+    to left,
+    #0497E8 16px, transparent 0)
+    no-repeat 0 9px/32px 6px;
+}
+
+.icon.icon-sync-direction-left::after {
+  border-top: 12px solid #0497E8;
+}
+
+
+/* integrations styles */
+.integrations-listing .links-container a.button {
+  display: block;
+}
+
+.integrations-listing .details-container {
+  text-align: center;
+}
+
+.old-brand.integrations-listing .details-container p + p {
+  margin-top: -32px;
+}
+
+.rebreanding2023 .integrations-listing .details-container p + p {
+  margin-top: -.5rem;
+}
+
+.integrations-listing .details-container ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.integrations-listing .details-container ul li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.integrations-listing .details-container img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 32px auto;
+}
+
+.integrations-listing .details-container img.details-badge {
+  width: 120px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .integrations-listing .links-container a.button {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .integrations-listing main p.button-container {
+    text-align: left !important;
+  }
+
+  .integrations-listing .carousel-container {
+    margin-top: 0;
+  }
+
+  .integrations-listing .details-container {
+    text-align: left;
+  }
+
+  .integrations-listing .details-container img {
+    margin: 32px 0;
+  }
+
+  .integrations-listing .tabs-container {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .integrations-listing .details-container,
+  .integrations-listing .links-container {
+    padding-right: 50px;
+  }
+
+  .integrations-listing .tabs-container {
+    padding-left: 50px;
+  }
+}
+
+/* Pagination */
+
+main .pagination-wrapper {
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6em;
+}
+
+main .pagination-wrapper .pagination-button,
+main .pagination-wrapper .pagination-ellipsis,
+main .pagination-wrapper .pagination-input {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--typ-font-weight-regular);
+  color: var(--color-gray-13);
+  padding: 10px 12px;
+  width: 44px;
+  border: 1px solid var(--color-gray-4);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  margin: 0 4px;
+}
+
+main .pagination-wrapper .pagination-button:hover {
+  cursor: pointer;
+  background-color: var(--color-gray-1);
+}
+
+main .pagination-wrapper .pagination-button.active {
+  background-color: var(--color-green-1);
+  color: var(--color-green-4);
+  border-color: var(--color-green-4);
+}
+
+main .pagination-wrapper .pagination-ellipsis {
+  pointer-events: none;
+}
+
+main .pagination-wrapper .pagination-button-next::after {
+  top: 0;
+  margin: 0;
+}
+
+main .pagination-wrapper .pagination-button-prev::before {
+  content: "";
+  border: solid var(--color-green-4);
+  border-width: 2px 0 0 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg) translateY(-50%);
+  position: relative;
+  left: 4px;
+}
+
+main .pagination-wrapper .pagination-text {
+  flex-grow: 1;
+}
+
+main .pagination-wrapper .pagination-input {
+  text-align: center;
+}

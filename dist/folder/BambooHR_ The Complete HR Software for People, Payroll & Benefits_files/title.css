@@ -1,0 +1,29 @@
+main .title [data-align='center'],
+main .title.center-align {
+  text-align: center;
+}
+
+main .title [data-align='left'] {
+  text-align: left;
+}
+
+main .title [data-align='right'] {
+  text-align: right;
+}
+
+main .title.spacing-top-none :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 0;
+}
+
+main .title.no-margin :is(h1, h2, h3, h4, h5, h6, div) {
+  margin: 0;
+}
+
+
+@media (min-width: 600px) {
+  main .title.title-emb-1 h2::after {
+    content: url('../../icons/leaf-emb.svg');
+    bottom: -38px;
+    position: relative;
+  }
+}
