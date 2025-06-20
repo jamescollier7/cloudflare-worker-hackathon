@@ -9,6 +9,6 @@ This is a quick example of serving html files as pages from GitHub via Cloudflar
 [https://my-worker.jamescollier7.workers.dev/](https://my-worker.jamescollier7.workers.dev/)
 
 ## Results:
-PageSpeed Insights shows 100 in every category
+[PageSpeed Insights shows 100 in every category](https://pagespeed.web.dev/analysis/https-my-worker-jamescollier7-workers-dev/s3bl1atnmd?form_factor=mobile)
 
 ![page speed logo](https://github.com/jamescollier7/cloudflare-worker-hackathon/blob/main/speed-score.png?raw=true)
